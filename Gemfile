@@ -14,6 +14,8 @@ gem 'rack-cors'
 gem 'puma'
 gem 'global'
 
+gem 'geocoder'
+
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', github: 'rspec/rspec-rails', branch: 'rails-5-support-patches'
