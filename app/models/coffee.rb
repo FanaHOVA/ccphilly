@@ -1,5 +1,8 @@
 class Coffee < ActiveRecord::Base
   before_create :set_maps_link
+  after_validation :geocode
+
+  geocoded_by :address
 
   def set_maps_link
     split = address.split
